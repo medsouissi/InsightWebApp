@@ -6,7 +6,7 @@ const router = express.Router();
 
 //@route GET && PRODUIT - /PRODUITS/ 
 router
-.route("/produits").get(produitsController.getAllProduits);
+.route("/").get(produitsController.getAllProduits).produits(produitsController.createNewProduit);
 
 router.route ("/:id").get(produitsController.getProduitById);
 
