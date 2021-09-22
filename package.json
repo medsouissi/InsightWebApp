@@ -2,13 +2,40 @@
   "name": "insight",
   "version": "1.0.0",
   "description": "insight web shop app",
-  "main": "index.js",
+  "main": "insight.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon insight.js",
+    "start": "node insight.js"
+    
   },
   "author": "Mohamed Souissi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@babel/core": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "axios": "^0.21.4",
+    "babel-loader": "^8.1.0",
+    "bcryptjs": "^2.4.3",
+    "ckeditor4": "^4.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-openid-connect": "^2.5.0",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailgen": "^2.0.14",
+    "mailgun-js": "^0.22.0",
+    "marked": "^3.0.4",
+    "md5": "^2.3.0",
+    "mysql2": "^2.3.0",
+    "nodemailer": "^6.4.14",
+    "nodemon": "^2.0.12",
+    "sanitize-html": "^2.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.53.0"
   }
 }
